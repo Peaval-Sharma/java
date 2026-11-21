@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Armstrong Number</title>
+
+    <script>
+        function myfunction() {
+
+            let a = parseInt(prompt("Enter any 3-digit number:"));
+
+            var b = a;
+            var remain, result;
+
+            result = 0;
+
+            remain = b % 10;
+                        result = result*10 + remain ;
+
+            b = Math.floor(b / 10);
+
+            remain = b % 10;
+                        result = result*10 + remain ;
+
+            b = Math.floor(b / 10);
+
+            remain = b % 10;
+            result = result*10 + remain ;
+
+            if (result == a) {
+                document.write("This is an palindrome Number.");
+            }
+            else {
+                document.write("This is not an palindrome Number.");
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+    <input type="button" value="GO" onclick="myfunction()">
+
+</body>
+</html>

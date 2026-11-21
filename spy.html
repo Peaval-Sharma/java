@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Armstrong Number</title>
+
+    <script>
+        function myfunction(){
+            let num = parseInt(prompt("Enter any number:"));
+let temp = num;
+let sum = 0;
+let product = 1;
+
+
+    let digit = temp % 10;
+    sum += digit;
+    product *= digit;
+   
+
+
+if (sum === product) {
+    alert(num + " is a Spy Number");
+} else {
+    alert(num + " is not a Spy Number");
+}
+        }
+    </script>
+</head>
+
+<body>
+
+    <input type="button" value="GO" onclick="myfunction()">
+
+</body>
+</html>

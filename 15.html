@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Alphabet Special Character</title>
+
+    <script>
+        function myfunction() {
+
+            let a = prompt("Enter any number, alphabet or special character:");
+
+            if (a >= 1 && a <= 100000 && !isNaN(a)) {
+                alert("This is a number.");
+
+            } else if (a.length === 1 &&
+                       ((a >= 'a' && a <= 'z') ||
+                        (a >= 'A' && a <= 'Z'))) {
+
+                alert("This is an alphabet.");
+
+            } else {
+                alert("This is a special character.");
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+    <input type="button" value="GO" onclick="myfunction()">
+
+</body>
+</html>

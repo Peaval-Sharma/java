@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function myFunction() {
+            let amount=parseFloat(prompt("Enter the amount:"));
+            let balance=10000
+            if(amount%100==0){
+                alert("The amount can be withdrawn.");
+            }
+            else{
+                alert("The amount cannot be withdrawn. Please enter a valid amount in multiples of 100.");
+            }
+            if(amount<balance){
+                alert("innsufficient balance.");
+            }
+    }
+    </script>
+</head>
+<body>
+    <input type="button" value="Click Me" onclick="myFunction()">
+</body>
+</html>

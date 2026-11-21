@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function myfunction(){
+            let year = parseInt(prompt("Enter a year:"));
+            if(year==12||year==1 ||year==2){
+                alert("Winter");
+            }
+            else if(year==3||year==4||year==5){
+                alert("Spring");
+            }
+            else if(year==6||year==7||year==8){
+                alert("Summer");
+            }
+            else if(year==9||year==10||year==11){
+                alert("Autumn");
+            }
+            else{
+                alert("Invalid input. Please enter a valid month number (1-12).");
+            }
+        }
+    </script>
+</head>
+<body>
+    <input type="button" value="Click Me" onclick="myfunction()">
+</body>
+</html>

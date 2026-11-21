@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Triangle Check</title>
+    <script>
+        function checkTriangle() {
+            let angle1 = parseInt(prompt("Enter First Angle:"));
+            let angle2 = parseInt(prompt("Enter Second Angle:"));
+
+            let angle3 = 180 - (angle1 + angle2);
+
+            if (angle3 > 0) {
+                alert("Triangle can be formed.\nThird Angle = " + angle3);
+            } else {
+                alert("Triangle cannot be formed.");
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <input type="button" value="Check Triangle" onclick="checkTriangle()">
+
+</body>
+</html>

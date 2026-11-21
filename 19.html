@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Niven Number</title>
+
+    <script>
+        function myfunction() {
+            var num, temp, sum, digit, b;
+
+            num = parseInt(prompt("Enter a two digit number:"));
+
+            temp = num;
+
+            digit = Math.floor(temp / 10); // tens digit
+            b = temp % 10;                 // units digit
+
+            sum = digit + b;
+
+            if (num % sum == 0) {
+                alert(num + " is a Niven Number");
+            }
+            else {
+                alert(num + " is not a Niven Number");
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <input type="button" value="GO" onclick="myfunction()">
+</body>
+</html>
